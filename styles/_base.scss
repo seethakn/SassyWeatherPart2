@@ -1,0 +1,74 @@
+header {
+  align-content: center;
+  background: $color-headerbackground;
+  color: rgba($color-headertext,0.8);
+  font-family: $font-highlight;
+
+  h1 {
+  	margin: 0px;
+  	line-height: 1;
+  }
+}
+
+body {
+  font-family: $font-main;
+  font-size: 16px;
+  padding: 15px;
+  background: $color-body url('../images/clouds.jpeg') no-repeat -300px -300px;
+}
+
+fieldset{
+  border: 1px solid rgba($black,0.4);
+  margin: 15px 0px;
+  padding: 0px 10px 10px 20px;
+}
+
+.legTitle {
+  color: $color-headerbackground;
+  font-family: $font-highlight;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.button {
+  border-radius: $btn-defaultradius;
+  background-color: $color-button;
+  font-weight: 300;
+  border: none;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0.3em;
+
+  &:hover {
+      border-radius: $btn-hoverradius;
+      color: $color-buttontext;
+  }
+ }
+
+  .btnSeattle {
+    display: inline-block;
+    color: transparent;
+    padding: 4em 4em;
+    box-sizing: content-box;
+    @include backImage(
+        '../images/SeattleWA.jpg');
+  }
+
+  .btnLondon {
+    display: inline-block;
+    color: transparent;
+    padding: 4em 4em;
+    box-sizing: content-box;
+    @include backImage(
+        '../images/London.jpg');
+  }
+
+  .btnMyWeather {
+    display: inline-block;
+    color: transparent;
+    padding: 4em 4em;
+    box-sizing: content-box;
+    @include backImage(
+        '../images/CurrentLocation.jpg');
+  }

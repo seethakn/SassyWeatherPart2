@@ -1,0 +1,44 @@
+.flex-container {
+	display: flex;
+	width: 98%;
+	margin: 1em 0;
+	border: 1px none;
+  padding: 10px 20px;
+	flex-flow: column;
+	text-align: center;
+}
+
+#weather {
+	@extend .legTitle;
+	text-align: center;
+}
+
+// Map datatype in Sass - mapping rainbow palette to display flexcontainer items
+$color-container-items: (
+ 	'description': $purple,
+	'icon': $offwhite,
+	'temperature': $blue,
+	'minTemperature': $green,
+	'maxTemperature': $yellow,
+	'humidity': $orange,
+	'windSpeed': $red
+);
+
+// @each loop to add rainbow colors to weather data display
+@each $key, $value in $color-container-items {
+    ##{$key} {
+        background-color: $value;
+    }
+}
+
+/* Alternate method */
+// $color-container-names: 'description', 'icon', 'temperature', 'minTemperature', 'maxTemperature', 'humidity', 'windSpeed';
+// $color-container-values: $purple, $offwhite, $blue, $green, $yellow, $orange, $red;
+//
+// @each $name in $color-container-names {
+//     $i: index($color-container-names, $name);
+//
+//     ##{$name} {
+//         background-color: nth($color-container-values, $i);
+//     }
+// }

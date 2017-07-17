@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sassy Weather</title>
+    <script type="text/javascript" src="script/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/sassycss.css">
+  </head>
+  <body>
+    <header>
+      <h1 align="center">Know your weather!</h1>
+      <blockquote align="center">When the weather is hot, keep a cool mind.
+        When the weather is cold, keep a warm heart. <small class="author"> - Ajahn Brahm</small>
+      </blockquote>
+    </header>
+      <fieldset>
+          <legend class="legTitle">Click on a location to know its weather today!</legend>
+          <button type="button" class="button btnSeattle" onclick="handleWeather(47.6762,-122.3182)">Seattle</button>
+          <button type="button" class="button btnLondon" onclick="handleWeather(51.5074,0.1278)">London</button>
+          <button type="button" class="button btnMyWeather" onclick="navigator.geolocation.getCurrentPosition(getLatLong)">My Weather</button>
+      </fieldset>
+      <div id="weather">
+      </div>
+      <section class="flex-container">
+
+      <div id="description">
+      </div>
+      <div id="icon">
+      </div>
+      <div id="temperature">
+      </div>
+      <div id="minTemperature">
+      </div>
+      <div id="maxTemperature">
+      </div>
+      <div id="humidity">
+      </div>
+      <div id="windSpeed">
+      </div>
+      </section>
+  </body>
+</html>

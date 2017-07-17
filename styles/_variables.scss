@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Slab|Merriweather|Oswald|Roboto+Slab');
+
+/* Color Palette */
+$shakespeare: #3E92CC; //rgb(62,146,204)
+$bigstone: #13293D; //rgb(19, 41, 61)
+$danube: #5890d0; //rgb(88,144, 208)
+$bayofmany: #264581; //rgb(38, 69, 129)
+$black: #000;
+$white: #fff;
+
+/* Rainbow palette for weather data display */
+$purple:      #6D73C2;
+$offwhite:    #EEE8D6;
+$blue:        #0076A3;
+$green:       #548C27;
+$yellow:      #FFBA00;
+$orange:      #F39856;
+$red:         #D14348;
+
+$color-body: $danube;
+$color-headertext: $shakespeare;
+$color-headerbackground: $bigstone;
+$color-button: $bayofmany;
+$color-buttontext: $white;
+
+/* Font styles */
+$font-main: 'Merriweather', Helvetica, sans-serif;
+$font-highlight: 'Bree Serif', Helvetica, sans-serif;
+
+/* Measurement */
+$btn-defaultradius: 50%;
+$btn-hoverradius: 20%;
